@@ -1,0 +1,16 @@
+.cartWidget{
+    display: flex;
+    align-items: center;
+    gap:0.5em;
+    padding: 1em;
+}
+
+.cartIcon{
+    color:black;
+    font-size: 24px;
+}
+
+.cartSpan{
+    font-size: 0.9em;
+    color: black;
+}

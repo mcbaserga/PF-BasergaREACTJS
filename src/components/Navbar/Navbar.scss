@@ -1,0 +1,30 @@
+
+.header{
+    background-color: #CBF2EE;
+    color:#06BF9D;
+    position: sticky;
+    width: 100%;
+    height: auto;
+}
+
+.headerLogo{
+    width: 80px;
+}
+    
+.headerContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.1em;
+}
+    
+    
+.navbar{
+    justify-content: left;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 2rem;
+    font-size: 1em;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
