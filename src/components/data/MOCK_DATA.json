@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "name": "Masajes anti estrés",
+        "description": "Sesión de 30 minutos",
+        "price": 3000,
+        "img": "https://via.placeholder.com/200",
+        "category": "masajes"
+    },
+    {
+        "id": 2,
+        "name": "Masajes anti estrés",
+        "description": "Sesión de 1 hora",
+        "price": 5000,
+        "img": "https://via.placeholder.com/200",
+        "category": "masajes"
+    },
+    {
+        "id": 3,
+        "name": "Drenaje linfático manual",
+        "description": "Sesión de 30 minutos",
+        "price": 6000,
+        "img": "https://via.placeholder.com/200",
+        "category": "drenaje"
+    },
+    {
+        "id": 4,
+        "name": "Drenaje linfático manual",
+        "description": "Sesión de 1 hora",
+        "price": 8000,
+        "img": "https://via.placeholder.com/200",
+        "category": "drenaje"
+        },
+    {
+    "id": 5,
+    "name": "Masaje deportivo",
+    "description": "Sesión de 30 minutos",
+    "price": 5000,
+    "img": "https://via.placeholder.com/200",
+    "category": "masajes"
+    },
+    {
+    "id": 6,
+    "name": "Masaje deportivo",
+    "description": "Sesión de 1 hora",
+    "price": 9000,
+    "img": "https://via.placeholder.com/200",
+    "category": "masajes"
+    }
+]

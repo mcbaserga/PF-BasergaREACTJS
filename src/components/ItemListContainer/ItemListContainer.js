@@ -1,13 +1,37 @@
+import { useEffect, useState } from 'react'
 import './ItemListContainer.scss'
+import { pedirDatos } from '../helpers/pedirDatos'
+import ItemList from '../ItemList/ItemList'
+import { useParams } from 'react-router-dom'
 
 
-const ItemListContainer = ({greeting}) => {
+
+
+const ItemListContainer = () => {
+    
+    const [productos, setProductos] = useState([])
+
+    const {categoryId}  = useParams()
+    console.log(categoryId)
+
+
+    useEffect(()=>{
+        pedirDatos()
+        .then((res) => {
+            if (categoryId){
+                setProductos( res.filter((prod) => prod.category === categoryId) )
+            } else{
+                setProductos(res)
+            }
+        })
+        .catch((error) => {
+            console.log(error)
+        })
+    }, [categoryId])
 
     return(
         <div className="listContainer">
-            <h2 className="listContainerTitle">SERVICIOS</h2>
-            <p className="listContainerMessage">{greeting}</p>
-            <img className="workInProgress" src="./imgs/giphy.gif" alt="Work in progress"/>
+            <ItemList items={productos}/>
         </div>
     )
 }
