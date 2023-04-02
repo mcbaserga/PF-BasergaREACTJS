@@ -1,14 +1,19 @@
+import { useContext } from 'react'
 import { BsCart4 } from 'react-icons/bs'
+import { CartContext } from '../../context/CartContext'
 import './CartWidget.scss'
+import { Link } from "react-router-dom"
 
 
 const CartWidget = () => {
+    const { totalCantidad, cart } = useContext(CartContext)
+
 
     return(
-        <div className="cartWidget">
+        <Link to="/cart" className={`cart-widget ${cart.length > 0 ? 'cart-widget-active' : ''}`}>
             <BsCart4 className='cartIcon'/>
-            <span className="cartSpan">0</span>
-        </div>    
+            <span className="cartSpan">{totalCantidad()}</span>
+        </Link>    
     )
 }
 
