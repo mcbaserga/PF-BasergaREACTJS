@@ -1,9 +1,18 @@
-.cartWidget{
+.cart-widget{
     display: flex;
     align-items: center;
     gap:0.5em;
     padding: 1em;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .3s;
+    
+    &-active {
+        visibility: visible;
+        opacity: 1;
+    }
 }
+
 
 .cartIcon{
     color:black;
