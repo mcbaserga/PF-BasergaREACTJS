@@ -1,9 +1,9 @@
 .listContainer{
-    padding: 1.5rem;
+    padding: 1rem;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    text-align: center;
 }
 
 .listContainerTitle{
@@ -11,14 +11,5 @@
     font-weight: 500;
     font-size: 1.5em;
     padding: 1.5em;
-}
-
-.listContainerMessage{
-    padding: 1.5em;
-    font-style: italic;
-}
-
-.workInProgress{
-    width: 300px;
-    padding: 1em;
+    text-align: center;
 }

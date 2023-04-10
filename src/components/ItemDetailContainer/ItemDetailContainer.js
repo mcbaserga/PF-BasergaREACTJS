@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
-import { pedirDatos } from "../helpers/pedirDatos"
 import ItemDetail from "../ItemDetail/ItemDetail"
+import { getDoc, doc } from "firebase/firestore"
+import { db } from "../../firebase/config"
 
 
 
@@ -14,10 +15,15 @@ const ItemDetailContainer = () => {
     useEffect(() => {
         setLoading(true)
 
-        pedirDatos()
-            .then((res) => {
-            setItem( res.find((prod) => prod.id === Number (itemId)) )    
-        })
+        const docRef = doc( db, "productos", itemId )
+
+        getDoc(docRef)
+            .then((doc) => {
+                setItem({
+                    id: doc.id,
+                    ...doc.data()
+                })
+            })
         .finally(()=> {
             setLoading(false)
         })
