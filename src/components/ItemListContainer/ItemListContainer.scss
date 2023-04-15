@@ -1,15 +1,16 @@
+.listContainerTitle{
+    color:#F21D56;
+    font-weight: 500;
+}
+
 .listContainer{
     padding: 1rem;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
     text-align: center;
 }
 
-.listContainerTitle{
-    color: #387368;
-    font-weight: 500;
-    font-size: 1.5em;
-    padding: 1.5em;
-    text-align: center;
+.btn{
+    background-color:#F21D56;
+    border-color:#F21D56;
+    color:white
 }

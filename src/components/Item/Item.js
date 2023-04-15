@@ -4,13 +4,14 @@ import { Link } from "react-router-dom"
 const Item = ({item}) => {
     
     return (
-                <div className="col-3 m-2">
-                    <h4>{item.name}</h4>
-                    <img src={item.img}/>
-                    <p>{item.description}</p>
-                    <p>Precio: ${item.price}</p>
-                    <p><small>Categoría: {item.category}</small></p>
-                    <Link to={`/detail/${item.id}`} className='btn btn-primary'>Ver más</Link>                </div>
+                <div className="col-4 my-5">
+                    <h4>{item.nombre} - {item.peso} g</h4>
+                    <img src={item.img} width="80%"/>
+                    <p>Notas: {item.notas}</p>
+                    <p><small>Categoría: {item.categoria}</small></p>
+                    <h5>Precio: ${item.precio}</h5>
+                    <Link to={`/detail/${item.id}`} className='btn btn-primary'>Ver más</Link>                
+                </div>
     )
 }
 

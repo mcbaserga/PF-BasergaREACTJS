@@ -24,10 +24,10 @@ const ItemDetail = ({item}) => {
     
     return (
         <div>
-            <h2>{item.name}</h2>
-            <img src= {item.img} alt={item.name}/>
-            <p>{item.description}</p>
-            <p>Precio: ${item.price}</p>
+            <h2>{item.nombre}</h2>
+            <img src= {item.img} width="25%" alt={item.nombre}/>
+            <p>{item.notas}</p>
+            <p>Precio: ${item.precio}</p>
 
             {
                 isInCart(item.id)
@@ -40,6 +40,7 @@ const ItemDetail = ({item}) => {
 
             }
 
+            <Link to="/" className="btn btn-primary m-1">Seguir comprando</Link>
 
 
 
