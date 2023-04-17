@@ -1,4 +1,4 @@
-import { Component, useContext, useState } from "react"
+import { useContext, useState } from "react"
 import { Link } from "react-router-dom"
 import { CartContext } from '../../context/CartContext'
 import ItemCount from "../ItemCount/ItemCount"
@@ -26,8 +26,10 @@ const ItemDetail = ({item}) => {
         <div>
             <h2>{item.nombre}</h2>
             <img src= {item.img} width="25%" alt={item.nombre}/>
-            <p>{item.notas}</p>
-            <p>Precio: ${item.precio}</p>
+            <h5>Peso: {item.peso} gramos</h5>
+            <p>Notas: {item.notas}</p>
+
+            <h4>Precio: ${item.precio}</h4>
 
             {
                 isInCart(item.id)
@@ -35,7 +37,8 @@ const ItemDetail = ({item}) => {
                 : <ItemCount
                     cantidad={cantidad}
                     setCantidad={setCantidad}     
-                    agregar={handleAgregar}       
+                    agregar={handleAgregar}
+                    max={item.stock}       
             />
 
             }

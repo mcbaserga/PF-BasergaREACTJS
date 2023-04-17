@@ -1,4 +1,3 @@
-
 import MOCK_DATA from '../data/MOCK_DATA.json'
 
 export const pedirDatos = () => {

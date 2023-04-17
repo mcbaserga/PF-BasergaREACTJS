@@ -13,8 +13,8 @@ export const Navbar = () => {
                 
                 <nav className="navbar">
                     <Link to="/" className="navbarLink">Productos</Link>
-                    <Link to="/tostado-medio" className="navbarLink">Tostado medio</Link>
-                    <Link to="/tostado-oscuro" className="navbarLink">Tostado oscuro</Link>
+                    <Link to="/productos/tostado-medio" className="navbarLink">Tostado medio</Link>
+                    <Link to="/productos/tostado-oscuro" className="navbarLink">Tostado oscuro</Link>
                     <Link to="/contacto" className="navbarLink">Contacto</Link>
                 </nav>
 

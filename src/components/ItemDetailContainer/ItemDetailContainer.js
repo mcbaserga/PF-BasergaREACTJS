@@ -5,18 +5,16 @@ import { getDoc, doc } from "firebase/firestore"
 import { db } from "../../firebase/config"
 
 
-
 const ItemDetailContainer = () => {
     const [item, setItem] = useState(null)
     const [loading, setLoading] = useState(true)
-    
+
     const {itemId} = useParams()
 
     useEffect(() => {
         setLoading(true)
 
-        const docRef = doc( db, "productos", itemId )
-
+        const docRef = doc(db, "productos", itemId)
         getDoc(docRef)
             .then((doc) => {
                 setItem({
@@ -24,9 +22,9 @@ const ItemDetailContainer = () => {
                     ...doc.data()
                 })
             })
-        .finally(()=> {
-            setLoading(false)
-        })
+            .finally(() => {
+                setLoading(false)
+            })
     }, [])
 
     return(

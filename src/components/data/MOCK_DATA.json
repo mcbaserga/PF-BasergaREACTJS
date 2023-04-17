@@ -7,9 +7,10 @@
         "peso": 250, 
         "tostado": "medio", 
         "sabor": "chocolate", 
+        "categoria": "tostado-medio", 
         "notas": "Carambola, caramelo, chocolate con leche", 
-        "img": "./assets/photos/puerto-blest-colombia-c311-ea8fdcb6da0bdae8c616682543424665-1024-1024.webp",
-        "cantidad": 1
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/215/467/products/puerto-blest-colombia-c311-ea8fdcb6da0bdae8c616682543424665-1024-1024.webp",
+        "stock": 5
 },
     {
         "id": 2,
@@ -19,9 +20,10 @@
         "peso": 250, 
         "tostado": "medio", 
         "sabor": "frutal", 
-        "notas": "Miel, maracuyá, melón", 
-        "img": "./assets/photos/puergo-blest-el-salvador-s2421-f7b74b1f0e566f1c4516710487756005-1024-1024.webp",
-        "cantidad": 1
+        "notas": "Miel, maracuyá, melón",
+        "categoria": "tostado-medio", 
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/215/467/products/puergo-blest-el-salvador-s2421-f7b74b1f0e566f1c4516710487756005-640-0.webp",
+        "stock": 2
 },
     {
         "id": 3,
@@ -29,11 +31,12 @@
         "precio": 1250, 
         "molido": "En granos", 
         "peso": 250, 
-        "tostado": "medio", 
+        "tostado": "oscuro", 
         "sabor": "frutal", 
-        "notas": "Quinotos, frutas de carozo, naranja", 
-        "img": "./assets/photos/puerto-blest-etiopia-e821-85c9009fd04a6a79bd16427117124235-1024-1024.webp",
-        "cantidad": 1
+        "notas": "Quinotos, frutas de carozo, naranja",
+        "categoria": "tostado-oscuro",
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/215/467/products/puerto-blest-etiopia-e831-dd577dc3976eef1a5f16463462583846-1024-1024.webp",
+        "stock": 3
 },
     {
         "id": 4,
@@ -43,9 +46,10 @@
         "peso": 250, 
         "tostado": "medio", 
         "sabor": "vainilla", 
-        "notas": "Vainilla, almendra, melaza", 
-        "img": "./assets/photos/puerto-blest-guatemala-g011-2ac2952a97da5f94d116657630333134-1024-1024.webp",
-        "cantidad": 1
+        "notas": "Vainilla, almendra, melaza",
+        "categoria": "tostado-medio",
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/215/467/products/puerto-blest-guatemala-g961-db08fc022bca2de76b16484291842428-1024-1024.webp",
+        "stock": 5
 },
     {
         "id": 5,
@@ -53,11 +57,12 @@
         "precio": 1000, 
         "molido": "En granos", 
         "peso": 250, 
-        "tostado": "medio", 
+        "tostado": "oscuro", 
         "sabor": "caramelo", 
+        "categoria": "tostado-oscuro", 
         "notas": "Lima, papaya, caramelo y pimienta negra", 
-        "img": "./assets/photos/puerto-blest-kenia1-c0134b3304e639b4ab16405440190111-1024-1024.webp",
-        "cantidad": 1
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/215/467/products/puerto-blest-k4291-60f732ed5ea3d3d1a816578870226496-1024-1024.webp",
+        "stock": 8
 },
     {   
         "id": 6,
@@ -67,7 +72,8 @@
         "peso": 250, 
         "tostado": "medio", 
         "sabor": "chocolate", 
+        "categoria": "tostado-medio", 
         "notas": "Papaya, cacao en grano, licor de cereza", 
-        "img": "./assets/photos/puerto-blest-nicaragua-n741-fa508719cfa04d6a6e16682546224987-1024-1024.webp",
-        "cantidad": 1
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/215/467/products/puerto-blest-n831-2b9654713c03b2da9516780433805597-1024-1024.webp",
+        "stock": 1
 }]

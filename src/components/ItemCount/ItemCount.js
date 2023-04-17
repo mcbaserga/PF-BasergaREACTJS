@@ -1,7 +1,7 @@
 
 
 
-const ItemCount = ({cantidad, setCantidad, agregar}) => {
+const ItemCount = ({max, cantidad, setCantidad, agregar}) => {
 
 
     const handleRestar = () => {
@@ -9,7 +9,7 @@ const ItemCount = ({cantidad, setCantidad, agregar}) => {
     }
 
     const handleSumar = () => {
-        setCantidad(cantidad + 1)
+    cantidad < max && setCantidad(cantidad + 1)
     }
 
 
