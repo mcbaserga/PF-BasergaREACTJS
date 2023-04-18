@@ -27,9 +27,10 @@ const ItemDetail = ({item}) => {
             <h2>{item.nombre}</h2>
             <img src= {item.img} width="25%" alt={item.nombre}/>
             <h5>Peso: {item.peso} gramos</h5>
+            <p>Molido: {item.molido}</p>
             <p>Notas: {item.notas}</p>
 
-            <h4>Precio: ${item.precio}</h4>
+            <h4>${item.precio}</h4>
 
             {
                 isInCart(item.id)

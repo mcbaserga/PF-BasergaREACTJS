@@ -8,15 +8,15 @@ const Item = ({item}) => {
 
     return (
                 <div className="col-4 my-5">
-                    <img src={item.img} width="80%"/>
-                    <div>
-                        <h4>{item.nombre} - {item.peso} g</h4>
-                        <p>Notas: {item.notas}</p>
+                    <img src={item.img} width="100%"/>
+                    <div className="card p-2">
+                        <h5>{item.nombre} - {item.peso} g</h5>
                         <p>Tostado: {item.tostado}</p>
+                        <h5>${item.precio}</h5>
+                        <Link to={`/detail/${item.id}`} className='btn btn-primary mx-5 my-2'>Ver más detalles</Link>
+
                     </div>
-                    <h5>Precio: ${item.precio}</h5>
-                    
-                    <Link to={`/detail/${item.id}`} className='btn btn-primary'>Ver más detalles</Link>     
+
                 </div>
     )
 }
