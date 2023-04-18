@@ -43,8 +43,9 @@ const ItemDetail = ({item}) => {
 
             }
 
-            <Link to="/" className="btn btn-primary m-1">Seguir comprando</Link>
-
+            <div>
+            <Link to="/" className="seguirComprando">Seguir comprando</Link>
+            </div>
 
 
         </div>

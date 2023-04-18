@@ -28,9 +28,9 @@ const Cart = () => {
             {
                 cart.map((item)=> (
                 <div key={item.id} className="rowCart">
-                    <h4>{item.nombre}</h4>
                     <img src={item.img} width="25%"/>
-                    <p>Cantidad: {item.cantidad}</p>
+                    <p><strong>{item.nombre}</strong></p>
+                    <p>x{item.cantidad}</p>
                     <p>Precio (un): ${item.precio}</p>
                     <p>Precio total: ${item.precio * item.cantidad}</p>
                     <button onClick={() => removerItem(item.id)} className="btn btn-danger"><BsFillTrashFill/></button>
@@ -40,11 +40,13 @@ const Cart = () => {
             
             
                 <h3>Total de la compra: ${totalCarrito()}</h3>
-                <Link to ="/checkout" className="btn btn-success m-2">Finalizar compra</Link>
-                <button onClick={vaciarCarrito} className="btn btn-danger m-2">Vaciar carrito</button>
+                <Link to ="/checkout" className="btn btn-success m-2">Iniciar compra</Link>
                 
                 <div>
-                    <Link to="/" className="btn btn-primary m-1">Seguir comprando</Link>
+                <button onClick={vaciarCarrito} className="btn btn-danger m-2">Vaciar carrito</button>
+                </div>
+                <div>
+                    <Link to="/" className="seguirComprando">Seguir comprando</Link>
                 </div>
                 
         </div>

@@ -5,6 +5,9 @@ import { writeBatch, collection, where, documentId, addDoc, getDocs, query, upda
 import { db } from "../../firebase/config"
 import { Formik } from 'formik';
 import * as Yup from 'yup';
+import React from 'react'
+import Confetti from 'react-confetti'
+import { Link } from 'react-router-dom'
 
 
 
@@ -64,12 +67,17 @@ const Checkout = () => {
     }
 }
 
+
+
     if (orderId){
         return (
             <div className="container my-5">
                 <h2>Tu compra se registró exitosamente!</h2>
-                <p>Tu número de orden es: {orderId}</p>
+                <p><strong>Tu número de orden es: {orderId}</strong></p>
+                <Confetti/>
+                <Link to="/" className="btn">Volver al inicio</Link>
             </div>
+
         )
     }
 
@@ -88,16 +96,30 @@ const Checkout = () => {
                     nombre: '',
                     direccion: '',
                     email: ''
+
                     }}
                     onSubmit={generarOrden}
                 >
                     {({values, errors, handleChange, handleSubmit})=> (
                     <form onSubmit={handleSubmit}>
+                        
+                    <h4>Datos de Contacto</h4>
+                    <input
+                        value={values.email}
+                        type="email"
+                        className="form-control my-2"
+                        placeholder="E-mail (*requerido)"
+                        name="email"
+                        onChange={handleChange}
+                    />
+                    {errors.email && <p>{errors.email}</p>}
+                    
+                    <h4>Datos de Entrega</h4>
                     <input
                         value={values.nombre}
                         type="text"
                         className="form-control my-2"
-                        placeholder="Tu nombre"
+                        placeholder="Nombre y apellido (*requerido)"
                         onChange={handleChange}
                         name="nombre"
                     />
@@ -107,21 +129,23 @@ const Checkout = () => {
                         value={values.direccion}
                         type="text"
                         className="form-control my-2"
-                        placeholder="Tu direccion"
+                        placeholder="Tu direccion (*requerido)"
                         name="direccion"
                         onChange={handleChange}
                     />
-                    
                     {errors.direccion && <p>{errors.direccion}</p>}
+
                     <input
-                        value={values.email}
-                        type="email"
+                        value={values.codigoPostal}
+                        type="number"
                         className="form-control my-2"
-                        placeholder="Tu email"
-                        name="email"
+                        placeholder="Código postal"
+                        name="codigoPostal"
                         onChange={handleChange}
                     />
-                    {errors.email && <p>{errors.email}</p>}
+                    
+                    
+                    
     
                     <button className="btn btn-primary" type="submit">Enviar</button>
                     
