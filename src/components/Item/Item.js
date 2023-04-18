@@ -15,6 +15,8 @@ const Item = ({item}) => {
                         <h5>${item.precio}</h5>
                         <Link to={`/detail/${item.id}`} className='btn btn-primary mx-5 my-2'>Ver más detalles</Link>
 
+                
+
                     </div>
 
                 </div>
